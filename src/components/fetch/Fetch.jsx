@@ -11,19 +11,28 @@ const Fetch = () => {
             .then((data) => setApi(data))
     }, [])
 
+    // let final=[mahedi,mm]-useState()
+
+    // let btn1 = (single) => {
+        
+    // }
+
+
+
     return (
         <div>
             <div className='cmnn'>
                 <div className='grid gap-5  grid-cols-3'>
                     {
-                        api. slice(0,6). map(res => <Single
+                        api.slice(0, 6).map(res => <Single
                             key={res.id}
                             single={res}
+                            // btn1={btn1}
                         ></Single>)
                     }
                 </div>
                 <div className='bg-green-500 h-20'>
-                   
+
 
                 </div>
             </div>

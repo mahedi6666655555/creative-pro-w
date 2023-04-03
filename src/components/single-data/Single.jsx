@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Single = ({ single }) => {
+const Single = (props) => {
 
-    let { name, img, gender, age, nationality, height } = single
+    let { name, img, gender, age, nationality, height } = props.single
 
     // console.log(height);
+    // let btn1 = props.btn1
+
 
     return (
         <div>
@@ -20,6 +22,10 @@ const Single = ({ single }) => {
                     <p className='pb-2 text-lg font-bold'>height: {height}</p>
                 </div>
                 <div>
+                    {/* reserve */}
+                    {/* onClick={()=>btn1()} */}
+                    {/* reserve */}
+
                     <button className='w-full rounded-lg hover:bg-red-200 p-3 text-white  bottom-0 bg-orange-500 absolute'>add to cart</button>
                 </div>
             </div>
